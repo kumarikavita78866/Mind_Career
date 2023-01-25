@@ -1,0 +1,29 @@
+<div ng-controller="teacher_ctr"> 
+	<table class="table  text-white table-bordered">
+
+		<thead>
+			<tr>
+				<th>Id</th>
+				<th>Name</th>
+				<th>Email</th>
+				<th>Department</th>
+				<th>Salary</th>
+			</tr>
+
+		</thead>
+
+		<tbody> 
+			 <tr ng-repeat="employee in Employee">
+				<td>{{ employee.Id }}</td>
+				<td>{{ employee.Name }}</td>
+				<td>{{ employee.Email }}</td>
+				<td>{{ employee.Department }}</td>
+				<td>{{ employee.Salary }}</td>
+			</tr>
+
+		</tbody>
+
+
+	</table>
+
+</div>
