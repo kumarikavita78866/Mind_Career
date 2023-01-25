@@ -1,0 +1,568 @@
+<!doctype html>
+<html lang="en" ng-app="User_Module">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Job_Portal</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" >
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+
+    <!-- Font Awesome -->
+<link
+href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+rel="stylesheet"
+/>
+<!-- Google Fonts -->
+<link
+href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap"
+rel="stylesheet"
+/>
+<!-- MDB -->
+<link
+href="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.3.0/mdb.min.css"
+rel="stylesheet"
+/>
+
+<!-- MDB -->
+<script
+type="text/javascript"
+src="https://cdnjs.cloudflare.com/ajax/libs/mdb-ui-kit/4.3.0/mdb.min.js"
+></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="../angular/angular.js"></script>
+    <script src="../angular/angularmin.js"></script>
+    <script src="../js/user.js"></script>
+    <link rel="stylesheet" href="../style/index.css">
+
+    <link rel="stylesheet" href="style/index.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+  </head>
+  <body class="container-fluid" ng-controller="Main_ctr">
+
+<section class="container-fluid" >
+  <div class="menu-bar">
+  <nav class="navbar navbar-expand-lg navbar-light"  style=" background-color: hsl(218, 41%, 15%);
+  background-image: radial-gradient(650px circle at 0% 0%,
+      hsl(218, 41%, 35%) 15%,
+      hsl(218, 41%, 30%) 35%,
+      hsl(218, 41%, 20%) 75%,
+      hsl(218, 41%, 19%) 80%,
+      transparent 100%),
+    radial-gradient(1250px circle at 100% 100%,
+      hsl(218, 41%, 45%) 15%,
+      hsl(218, 41%, 30%) 35%,
+      hsl(218, 41%, 20%) 75%,
+      hsl(218, 41%, 19%) 80%,
+      transparent 100%);" >
+    <a href="#"><img src="2" alt="1">
+    <a class="navbar-brand text-light" href="#">MindCareer</a></a>
+    <i class="fa fa-car text-dark" aria-hidden="true"></i>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent" id="navbarNav"  >
+      <ul class="navbar-nav  mx-auto">
+        <li class="nav-item ">
+          <a class="nav-link text-light" style="font-size: 18px"; href="home.html">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown text-light" style="font-size: 18px"; href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+         Jobs
+          </a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="job_skill.html">Jobs by Skill</a>
+            <a class="dropdown-item" href="job_location.html">Jobs by Location</a>
+            <a class="dropdown-item" href="job_category.html">Jobs by Category</a>
+            <a class="dropdown-item" href="job_designation.html">Job by Designation</a>
+            <a class="dropdown-item" href="#!job_company.html">Jobs by Company</a>
+            <a class="dropdown-item" href="sector.html">Jobs by Sector</a>
+            <a class="dropdown-item" href="experience.html">Jobs by Experience</a>
+          </div>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown text-light" style="font-size: 18px"; href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+            Company
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="c_category.html">Company by Category</a>
+            <a class="dropdown-item" href="c_location.html">Company by Location</a>
+            <a class="dropdown-item" href="c_Name.html">Company By Name</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown text-light" style="font-size: 18px"; href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+            Recruiters
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Recruiters By Category</a>
+            <a class="dropdown-item" href="#">Recruiter By Location</a>
+            <a class="dropdown-item" href="#">Recruiters By Company </a>
+            <a class="dropdown-item" href="#">Recruiters Grids</a>
+            <a class="dropdown-item" href="#">Recruiters Dashboard</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown text-light" style="font-size: 18px"; href="#" id="navbarScrollingDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+            Candidates
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="resume.html">Upload Resume</a>
+            <a class="dropdown-item" href="candidategrid.html">Candidates Grid</a>
+            <a class="dropdown-item" href="candidateDash.html"> Candidates Dashboard</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown text-light" style="font-size: 18px"; href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+          More  
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Contact</a>
+            <a class="dropdown-item" href="#">Help</a>
+            <a class="dropdown-item" href="#">Feedback</a>
+          </div>
+          
+        </li>
+      </ul>
+
+      <div class="dropdown" ng-hide="profilebtn">
+        <a
+          class="dropdown-toggle d-flex align-items-center hidden-arrow"
+          href="#"
+          id="navbarDropdownMenuAvatar"
+          role="button"
+          data-mdb-toggle="dropdown"
+          aria-expanded="false"
+        >
+          <img
+            src="https://mdbcdn.b-cdn.net/img/new/avatars/2.webp"
+            class="rounded-circle"
+            height="25"
+            alt="Black and White Portrait of a Man"
+            loading="lazy"
+          />
+        </a>
+        <ul
+          class="dropdown-menu dropdown-menu-end"
+          aria-labelledby="navbarDropdownMenuAvatar"
+        >
+          <li>
+            <a class="dropdown-item" href="#">My profile</a>
+          </li>
+          
+          <li>
+            <a class="dropdown-item" ng-click="LogoutFun()" href="#">Logout</a>
+          </li>
+          
+        </ul>
+        
+          
+      </div>
+
+      <button class="bg-warning btn text-light " ng-hide="loginbtn"  style="text-decoration: none;  font-size: 10px"; type="button" >
+        <a class="text-light"  href="../Base/view/login.html">
+          Login</a>
+        </button>
+      <!-- <button class="btn btn-transparent" style="text-decoration: none; color: white; font-size: 18px"; type="button" >
+        <a class="text-light" href="../Base/view/register.html">Register</a>
+      </button> -->
+    </div>
+  </nav>
+  </div>
+</section>
+
+
+<section class="text-center container-fluid  " style=" background-repeat: none; background-image:url(../images/4.jpg); height: 500px; width: auto; margin-top: 10px;" ><br>
+ <div class="search" style="margin-top: 100px;" >
+  <p class="text-danger " style="font-size: 40px; "><b>FIND YOUR DREAM JOBS NOW</b></p>
+  <p class="text-primary"  style="font-size: 25px;"><b>Search the job in the  top most companies </b></p>
+  <div  ><br>
+    <input class="" style="height: 40px; border-radius: 5px; width:13% " type="search" name="location" required placeholder="Enter your location" > 
+    <input class="" style="height: 40px;  border-radius: 5px; width:30%" type="search" name="search" required placeholder="Enter Skill/Company/Designation" >
+    <button class="bg-warning " style="height:40px ;  border-radius: 5px;" >search</button><br><br>
+    
+  </div><br><br><br><br>
+</div>
+</section>
+
+  
+
+
+      
+<section class="container-fluid">
+  <h2 class="text-center"  style=" margin-top: 40px; margin-bottom: 40px; font-style:italic;font-family:Georgia, 'Times New Roman', Times, serif; color:rgb(27, 9, 95);">Search Jobs in Your Location</h2>
+  <div class="row">
+    <div class="col md-3">
+      <div class="card">
+        <div class="card-header">
+          <img src="../images/TATA.jpg" alt="tata" height="200px" width="100%">
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Tata Steel Ltd.</h5>
+          <p class="card-text"><i class="bi bi-geo-alt"></i>&nbsp; Bistupur Jamshedpur Jharkhand </p>
+          <p><i class="bi bi-telephone"></i> &nbsp;06576640780</p>
+          <div class="text-center">  <a href="../Base/view/register.html" class="btn btn-primary pt-50">Apply Now</a>&nbsp;<a href="../Base/view/software.html" class="btn btn-outline-secondary pt-50">View More</a></div>        </div>
+      </div>
+    </div>
+    <div class="col md-3">
+      <div class="card">
+        <div class="card-header">
+          
+          <img src="../images/ayuda.jpg" alt="Ayuda" height="200px" width="100%">
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Deccan iService Pvt Ltd</h5>
+          <p class="card-text"><i class="bi bi-geo-alt"></i> &nbsp; Namkum Samlog Ranchi</p>
+          <p><i class="bi bi-telephone"></i> &nbsp;8588894888</p>
+          <div class="text-center">  <a href="#" class="btn btn-primary pt-20">Apply Now</a>&nbsp;<a href="#" class="btn btn-outline-secondary pt-50">View More</a></div>        </div>
+      </div>
+    </div>
+    <div class="col md-3">
+      <div class="card">
+        <div class="card-header">
+          <img src="../images/brightcode.jpeg" alt="brightcode" height="200px" width="100%">
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Brightcode Software Pvt Ltd</h5>
+          <p class="card-text"><i class="bi bi-geo-alt"></i>&nbsp;Namkum Lowadih Ranchi</p>
+          <p><i class="bi bi-telephone"></i> &nbsp;09386806214</p>
+          <div class="text-center">  <a href="#" class="btn btn-primary pt-50">Apply Now</a>&nbsp;<a href="#" class="btn btn-outline-secondary pt-50">View More</a></div>        </div>
+      </div>
+    </div>
+    <div class="col md-3">
+      <div class="card">
+        <div class="card-header">
+          
+          <img src="../images/credence-tie-up-pvt-ltd--ranchi-oboxgknd3c.webp" alt="Credence" height="200px" width="100%">
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Credence Tie Up Pvt. Ltd.</h5>
+          <p class="card-text"><i class="bi bi-geo-alt"></i> &nbsp; Durga Kutir Main Road Ranchi </p>
+          <p><i class="bi bi-telephone"></i> &nbsp;8888888888</p>
+          <div class="text-center">  <a href="#" class="btn btn-primary pt-50">Apply Now</a>&nbsp;<a href="#" class="btn btn-outline-secondary pt-50">View More</a></div>        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="container-fluid" style=" margin-top: 10px;">
+  <h2 class="text-center"  style="font-style:italic;font-family:Georgia, 'Times New Roman', Times, serif; color:rgb(27, 9, 95);">Browse Jobs by Skill</h2>
+  <div class="row">
+    <div class="col md-3">
+      <div class="card">
+        <div class="card-header text-center">
+          <img src="../images/credence-tie-up-pvt-ltd--ranchi-oboxgknd3c.webp" alt="Credence" height="200px" width="100%">
+          Networking
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Special title treatment</h5>
+          <p class="card-text"><i class="bi bi-geo-alt"></i> &nbsp;With supporting text content.</p>
+          <p><i class="bi bi-telephone"></i> &nbsp;6200190104</p>
+  
+          <div class="text-center">  <a href="#" class="btn btn-primary pt-50">Apply Now</a>&nbsp;<a href="#" class="btn btn-outline-secondary pt-50">View More</a></div>
+        </div>
+      </div>
+    </div>
+    <div class="col md-3">
+      <div class="card">
+        <div class="card-header text-center">
+          <img src="../images/credence-tie-up-pvt-ltd--ranchi-oboxgknd3c.webp" alt="Credence" height="200px" width="100%">
+        Software Testing Jobs
+        </div>
+        <div class="card-body" >
+          <h5 class="card-title">Special title treatment</h5>
+          <p class="card-text"><i class="bi bi-geo-alt"></i>&nbsp;With supporting text content.</p>
+          <p><i class="bi bi-telephone"></i> &nbsp;6200190105</p>
+          <div class="text-center">  <a href="#" class="btn btn-primary pt-50">Apply Now</a>&nbsp;<a href="#" class="btn btn-outline-secondary pt-50">View More</a></div>
+        </div>
+      </div>
+    </div>
+    <div class="col md-3">
+      <div class="card">
+        <div class="card-header text-center">
+          <img src="../images/credence-tie-up-pvt-ltd--ranchi-oboxgknd3c.webp" alt="Credence" height="200px" width="100%">
+          Finance Jobs
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Special title treatment</h5>
+          <p class="card-text"><i class="bi bi-geo-alt"></i>&nbsp;With supporting text content.</p>
+          <p><i class="bi bi-telephone"></i> &nbsp;6200190106</p>
+          <div class="text-center">  <a href="#" class="btn btn-primary pt-50">Apply Now</a>&nbsp;<a href="#" class="btn btn-outline-secondary pt-50">View More</a></div>
+        </div>
+      </div>
+    </div>
+    <div class="col md-3">
+      <div class="card">
+        <div class="card-header text-center">
+          <img src="../images/credence-tie-up-pvt-ltd--ranchi-oboxgknd3c.webp" alt="Credence" height="200px" width="100%">
+      Music Jobs
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">Special title treatment</h5>
+          <p class="card-text"><i class="bi bi-geo-alt"></i> &nbsp;With supporting text content.</p>
+          <p><i class="bi bi-telephone"></i> &nbsp;6200190107</p>
+          <div class="text-center">  <a href="#" class="btn btn-primary pt-50">Apply Now</a>&nbsp;<a href="#" class="btn btn-outline-secondary pt-50">View More</a></div>
+        </div>
+      </div>
+    
+    </div>
+  </div>
+   
+</section>
+
+<section class="container-fluid">
+  
+</section>
+<br><br>
+
+
+<section class="container-fluid">
+  
+  <div class="card  my-5   mb-2"  style="width: 100%; height:auto; background-image: linear-gradient(rgb(169, 248, 169),#123);">
+    <div class="row no-gutters">
+      
+      <div class="col-md-6">
+        <div class="card-body">
+          <h5 class="card-title text-center text-light" style="font-size: 50px;  ">For Employers</h5><br>
+          <p class="card-text text-center text-light " style="font-size: 20px;font-style: italic;"><i class="bi bi-stopwatch " style="color: rgb(242, 235, 22);"></i> Hire staff in 48 Hours for free now </p>
+          
+          <p class="card-text text-center text-light" style="font-size: 20px;font-style: italic;"> <i class="bi bi-person-rolodex" style="color: rgb(242, 235, 22);"></i> Hire the best employee in your city  </p>
+          <p class="card-text text-center text-light " style="font-size: 20px; font-style: italic;"> <i class="bi bi-calendar2-plus "style="color: rgb(242, 235, 22);" ></i>  Best candidates reach out to you directly</p>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<button type="btn" class="btn btn-info " style="align-content: center; position: relative;">Post Job</button>
+        </div>
+      </div>
+      <div class="col-md-6 " >
+        <img style="width: 100% ; height: 400px;" src="../images/d1.jpg" alt="...">
+        
+      </div>
+      
+    </div>
+  </div>
+</section>
+
+<section class="container-fluid" style=" margin-top: 10px;">
+  <h2 class="text-center"  style="font-style:normal;font-family:Georgia, 'Times New Roman', Times, serif; color:rgb(27, 9, 95);">Featured companies actively hiring</h2><br><br>
+  <div class="row">
+    <div class="col md-3">
+      <div class="card">
+
+        <div class="card-body">
+          <div class="text-center">
+            <img src="../images/c14.png" style="height: 48px; width: 70%;" alt="">
+          </div><br><br>
+          <h5 class="card-title text-center">capgemini</h5>
+          <p class="card-text text-center "><i class="bi bi-star-fill " style="color: rgb(14, 91, 114);"></i>&nbsp;4.1| 233.43k+ reviews</p><br>
+          <p class="text-center">Information technology companuies</p>
+          <div class="text-center">  <a href="#" class="btn btn-primary pt-50" style="border-radius: 30px;">Apply Now</a></div>
+        </div>
+      </div>
+    </div>
+    <div class="col md-3">
+      <div class="card">
+        
+        <div class="card-body">
+          <div class="text-center">
+            <img src="../images/c15.png" style="height: 48px; width: 70%;" alt="">
+          </div><br><br>
+          <h5 class="card-title text-center">capgemini</h5>
+          <p class="card-text text-center "><i class="bi bi-star-fill " style="color: rgb(14, 91, 114);"></i>&nbsp;4.1| 233.43k+ reviews</p><br>
+          <p class="text-center">Information technology companuies</p>
+          <div class="text-center">  <a href="#" class="btn btn-primary pt-50" style="border-radius: 30px;">Apply Now</a></div>
+        </div>
+      </div>
+    </div>
+    <div class="col md-3">
+      <div class="card">
+        
+        <div class="card-body">
+          <div class="text-center">
+            <img src="../images/c10.png" style="height: 48px; width: 70%;" alt="">
+          </div><br><br>
+          <h5 class="card-title text-center">capgemini</h5>
+          <p class="card-text text-center "><i class="bi bi-star-fill " style="color: rgb(14, 91, 114);"></i>&nbsp;4.1| 233.43k+ reviews</p><br>
+          <p class="text-center">Information technology companuies</p>
+          <div class="text-center">  <a href="#" class="btn btn-primary pt-50" style="border-radius: 30px;">Apply Now</a></div>
+        </div>
+      </div>
+    </div>
+    <div class="col md-3">
+      <div class="card">
+        
+        <div class="card-body">
+          <div class="text-center">
+            <img src="../images/c17.png" style="height: 48px; width: 70%;" alt="">
+          </div><br><br>
+          <h5 class="card-title text-center">capgemini</h5>
+          <p class="card-text text-center "><i class="bi bi-star-fill " style="color: rgb(14, 91, 114);"></i>&nbsp;4.1| 233.43k+ reviews</p><br>
+          <p class="text-center">Information technology companuies</p>
+          <div class="text-center">  <a href="#" class="btn btn-primary pt-50" style="border-radius: 30px;">Apply Now</a></div>
+        </div>
+      </div>
+    </div>
+    </div>
+    
+    
+</section >
+
+<div class="text-center mt-2 mb-3 " ><br>
+  <button type="button" class="btn btn-info" style="width:250px ;height:40px; border-radius: 20px;" >View All Filters</button>
+</div><br><br>
+
+
+
+<section class="container-fluid ">
+  <h2 class="text-center "  style="font-style:italic;font-family:Georgia, 'Times New Roman', Times, serif;color:rgb(27, 9, 95);">Frequently Ask Questions</h2><br>
+  <div id="accordion" style="width:60% ; margin-left: 20%;">
+    <div class="card " >
+      <div class="card-header">
+        <a class="card-link text-center" style="font-size: 20px;" data-toggle="collapse" href="#collapseOne">
+What is the use of MindCareer?
+        </a>
+      </div>
+      <div id="collapseOne" class="collapse show" data-parent="#accordion">
+        <div class="card-body">
+          MindCareer is India's #1 Professional that connects job seekers with employers.
+          It helps candidates or job seekers to apply for jobs & talk to the corresponding HRs of the companies directly and vice versa.
+        </div>
+      </div>
+    </div>
+  
+    <div class="card">
+      <div class="card-header">
+        <a class="collapsed card-link" style="font-size: 20px;"  data-toggle="collapse" href="#collapseTwo">
+          How do I get job using MindCareer?
+        </a>
+      </div>
+      <div id="collapseTwo" class="collapse" style="font-size: 20px;"  data-parent="#accordion">
+        <div class="card-body">
+It is very simple to find jobs on MindCareer.
+<ol>
+<li> Login in MindCareer using your phone number and complete your profile.</li>
+<li>Select the job according to your choice and apply.</li>
+<li>  Call HR to schedule an interview.</li>
+</ol>
+        </div>
+      </div>
+    </div>
+  
+    <div class="card">
+      <div class="card-header">
+        <a class="collapsed card-link" style="font-size: 20px;"  data-toggle="collapse" href="#collapseThree">
+       How can an employers post a job on MindCareer?
+        </a>
+      </div>
+      <div id="collapseThree" class="collapse" data-parent="#accordion">
+        <div class="card-body">
+          Employers can post job on MindCareer by following steps:-
+          <ol>
+         <li>Register with your mobile number at <a href="#">MindCareer.online</a> </li>
+        <li>Click on Post and enter basic details about the job.</li>
+         <li>Add their requirements from the candidates and interview information.</li>
+       <li>Click on finish and post.</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  
+    <div class="card">
+      <div class="card-header">
+        <a  class="collapsed card-link" style="font-size: 20px;"  data-toggle="collapse" href="#collapseThree">
+       What type of jobs are available on MindCareer?     </a>
+      </div>
+      <div id="collapseThree" class="collapse" data-parent="#accordion">
+        <div class="card-body">
+      There are different types of jobs available on MindCareer like Full-Time jobs, Part-Time jobs, Women jobs, Fresher's jobs etc.
+        </div>
+      </div>
+    </div>
+    <div class="card">
+      <div class="card-header">
+        <a class="collapsed card-link" style="font-size: 20px;"  data-toggle="collapse" href="#collapseThree">
+        Can user's earn money from MindCareer?  
+        </a>
+      </div>
+      <div id="collapseThree" class="collapse" data-parent="#accordion">
+        <div class="card-body">
+       Yes, by applying the jobs available on MindCareer.
+       It doesn't provide jobs directly but it helps candidates to apply for the jobs across the top cities in India.
+        </div>
+      </div>
+    </div>
+  </div>
+</section><br><br>
+
+
+<section class="container-fluid text-light" style="background-image:linear-gradient(#432,#312,#123)
+;"><br>
+  <h3 class="text-center">About Us</h3><br>
+  <p class=" container" style="padding: 10px; line-height: 30px; font-style: italic;" >Get a 360 customer profile, build high-impact campaigns, gain critical business insights. Unlock and unify your customer data to generate rich insights that drive engagement. Digital Transformation. Digital Content Strategy. Drupal Platform. Free Gartner Report. 24x7 Global Support. Services: Cloud Platform, Multisite Management, Security, Digital Asset Management, Personalization.Get a 360 customer profile, build high-impact campaigns, gain critical business insights. Unlock and unify your customer data to generate rich insights that drive engagement. Digital Transformation. Digital Content Strategy. Drupal Platform. Free Gartner Report. 24x7 Global Support. Services: Cloud Platform, Multisite Management, Security, Digital Asset Management, Personalization.</p><br><br>
+</section><br>
+
+<section class="container-fluid " style=" height:200px; line-height: 30px;background-color: hsl(218, 41%, 15%);
+background-image: radial-gradient(650px circle at 0% 0%,
+    hsl(218, 41%, 35%) 15%,
+    hsl(218, 41%, 30%) 35%,
+    hsl(218, 41%, 20%) 75%,
+    hsl(218, 41%, 19%) 80%,
+    transparent 100%),
+  radial-gradient(1250px circle at 100% 100%,
+    hsl(218, 41%, 45%) 15%,
+    hsl(218, 41%, 30%) 35%,
+    hsl(218, 41%, 20%) 75%,
+    hsl(218, 41%, 19%) 80%,
+    transparent 100%);">
+  <div class="container-fluid">
+    <div class="row row-cols-1 row-cols-md-4">
+      <div class="col mb-3 text-light">
+      <ul style="text-decoration:inline-block; list-style: none;margin-top: 20px; ">
+      <li>About Us</li>
+        <li>Term & Conditions</li>
+        <li>FAQs</li>
+        <li>Trust & Safety</li>
+       </ul>
+           </div>
+       <div class="col mb-3 text-light">
+        <ul style="text-decoration:inline-block; list-style: none;margin-top: 20px; ">
+            <li>Candidates</li>
+            <li>Register </li>
+            <li> Search Job</li>
+            <li>Login</li>
+            
+          
+        </ul>
+      </div>
+      <div class="col mb-3 text-light">
+          <ul style="text-decoration:inline-block; list-style: none;margin-top: 20px; ">
+            <li>Employers</li>
+            <li>Job Posting</li>
+            <li>Resume Database Access</li>
+            <li>Recruiter Login</li>
+          </ul>
+      </div>
+          <div class="col mb-3 text-light">
+            <ul style="text-decoration:inline-block; list-style: none; margin-top: 20px;" >
+              <li>Social Media</li>
+              <li>Facebook</li>
+              <li>Instagram</li>
+              <li>Twitter</li>
+          
+            </ul> 
+          </div>
+      </div>
+    </div>
+  </div>
+  <div class="container text-light">
+    <p>All @copyright reserved to Escape City; 2022</p>
+  </div>
+</section>
+
+  </body>
+</html>

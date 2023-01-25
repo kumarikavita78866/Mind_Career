@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en" ng-app="myMod">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Job_Portal</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" >
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+    
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="/angular/angular.js"></script>
+    <script src="/angular/route.js"></script>
+    
+    <link rel="stylesheet" href="../style/index.css">
+
+    <link rel="stylesheet" href="style/index.css">
+    <script src="angular/angularjs.js"></script>
+    <script src="angular/route.js"></script>
+    <script src="angular/module1.js"></script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.8.3/angular.min.js"></script>
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+   
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css">
+  </head>
+  <body class="container-fluid" ng-controller="ctr">
+
+<section class="container-fluid" >
+  <div class="menu-bar">
+  <nav class="navbar navbar-expand-lg navbar-light"  style=" background-color: hsl(218, 41%, 15%);
+  background-image: radial-gradient(650px circle at 0% 0%,
+      hsl(218, 41%, 35%) 15%,
+      hsl(218, 41%, 30%) 35%,
+      hsl(218, 41%, 20%) 75%,
+      hsl(218, 41%, 19%) 80%,
+      transparent 100%),
+    radial-gradient(1250px circle at 100% 100%,
+      hsl(218, 41%, 45%) 15%,
+      hsl(218, 41%, 30%) 35%,
+      hsl(218, 41%, 20%) 75%,
+      hsl(218, 41%, 19%) 80%,
+      transparent 100%);" >
+    <a href="#"><img src="" alt="1">
+    <a class="navbar-brand text-light" href="#">MindCareer</a></a>
+    
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent" id="navbarNav"  >
+      <ul class="navbar-nav  mx-auto">
+        <li class="nav-item ">
+          <a class="nav-link text-light" style="font-size: 18px"; href="home.html">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown text-light" style="font-size: 18px"; href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+         Jobs
+          </a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="job_skill.html">Jobs by Skill</a>
+            <a class="dropdown-item" href="job_location.html">Jobs by Location</a>
+            <a class="dropdown-item" href="job_category.html">Jobs by Category</a>
+            <a class="dropdown-item" href="job_designation.html">Job by Designation</a>
+            <a class="dropdown-item" href="#!job_company.html">Jobs by Company</a>
+            <a class="dropdown-item" href="sector.html">Jobs by Sector</a>
+            <a class="dropdown-item" href="experience.html">Jobs by Experience</a>
+          </div>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown text-light" style="font-size: 18px"; href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+            Company
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="c_category.html">Company by Category</a>
+            <a class="dropdown-item" href="c_location.html">Company by Location</a>
+            <a class="dropdown-item" href="c_Name.html">Company By Name</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown text-light" style="font-size: 18px"; href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+            Recruiters
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Recruiters By Category</a>
+            <a class="dropdown-item" href="#">Recruiter By Location</a>
+            <a class="dropdown-item" href="#">Recruiters By Company </a>
+            <a class="dropdown-item" href="#">Recruiters Grids</a>
+            <a class="dropdown-item" href="#">Recruiters Dashboard</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown text-light" style="font-size: 18px"; href="#" id="navbarScrollingDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+            Candidates
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="resume.html">Upload Resume</a>
+            <a class="dropdown-item" href="candidategrid.html">Candidates Grid</a>
+            <a class="dropdown-item" href="candidateDash.html"> Candidates Dashboard</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown text-light" style="font-size: 18px"; href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+          More  
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Contact</a>
+            <a class="dropdown-item" href="#">Help</a>
+            <a class="dropdown-item" href="#">Feedback</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown"><i class="fa fa-car text-dark" aria-hidden="true"></i>
+            <a class="nav-link dropdown text-light" style="font-size: 18px"; href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+            Cart
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Brightcode</a>
+                <a class="dropdown-item" href="#">Ayuda</a>
+                <a class="dropdown-item" href="#">Credence</a>
+              </div>
+
+          </li>
+      </ul>
+      <ul class="nav navbar-nav me-0">
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle d-flex align-items-center"href="#"id="navbarDropdownMenuLink"role="button"data-bs-toggle="dropdown"aria-expanded="false">
+            <img src="../../images/user.webp"class="rounded-circle"height="40"alt="Portrait of a Woman"loading="lazy"/>
+          </a>
+          
+          <li class="nav-item"><a class="nav-link fs-4" href="#"> Logout</a></li>
+              </ul>
+    </div>
+  </nav>
+  </div>
+</section>
+
+
+
+<br><br>
+
+
+<section class="container-fluid " style=" height:200px; line-height: 30px;background-color: hsl(218, 41%, 15%);
+background-image: radial-gradient(650px circle at 0% 0%,
+    hsl(218, 41%, 35%) 15%,
+    hsl(218, 41%, 30%) 35%,
+    hsl(218, 41%, 20%) 75%,
+    hsl(218, 41%, 19%) 80%,
+    transparent 100%),
+  radial-gradient(1250px circle at 100% 100%,
+    hsl(218, 41%, 45%) 15%,
+    hsl(218, 41%, 30%) 35%,
+    hsl(218, 41%, 20%) 75%,
+    hsl(218, 41%, 19%) 80%,
+    transparent 100%);">
+  <div class="container-fluid">
+    <div class="row row-cols-1 row-cols-md-4">
+      <div class="col mb-3 text-light">
+      <ul style="text-decoration:inline-block; list-style: none;margin-top: 20px; ">
+      <li>About Us</li>
+        <li>Term & Conditions</li>
+        <li>FAQs</li>
+        <li>Trust & Safety</li>
+       </ul>
+           </div>
+       <div class="col mb-3 text-light">
+        <ul style="text-decoration:inline-block; list-style: none;margin-top: 20px; ">
+            <li>Candidates</li>
+            <li>Register </li>
+            <li> Search Job</li>
+            <li>Login</li>
+            
+          
+        </ul>
+      </div>
+      <div class="col mb-3 text-light">
+          <ul style="text-decoration:inline-block; list-style: none;margin-top: 20px; ">
+            <li>Employers</li>
+            <li>Job Posting</li>
+            <li>Resume Database Access</li>
+            <li>Recruiter Login</li>
+          </ul>
+      </div>
+          <div class="col mb-3 text-light">
+            <ul style="text-decoration:inline-block; list-style: none; margin-top: 20px;" >
+              <li>Social Media</li>
+              <li>Facebook</li>
+              <li>Instagram</li>
+              <li>Twitter</li>
+          
+            </ul> 
+          </div>
+      </div>
+    </div>
+  </div>
+  <div class="container text-light">
+    <p>All @copyright reserved to Escape City; 2022</p>
+  </div>
+</section>
+
+  </body>
+</html>

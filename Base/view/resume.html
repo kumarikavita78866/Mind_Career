@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en" ng-app="Mod">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Job_Portal</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" >
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
+    <script src="angular/angular.js"></script>
+    <script src="angular/user_route.js"></script>
+    <script src="angular/module.js"></script>
+    <link rel="stylesheet" href="style/index.css">
+  </head>
+  <body>
+      
+<section class="container-fluid" >
+  <div class="menu-bar">
+  <nav class="navbar navbar-expand-lg navbar-light"  style=" background-color: hsl(218, 41%, 15%);
+  background-image: radial-gradient(650px circle at 0% 0%,
+      hsl(218, 41%, 35%) 15%,
+      hsl(218, 41%, 30%) 35%,
+      hsl(218, 41%, 20%) 75%,
+      hsl(218, 41%, 19%) 80%,
+      transparent 100%),
+    radial-gradient(1250px circle at 100% 100%,
+      hsl(218, 41%, 45%) 15%,
+      hsl(218, 41%, 30%) 35%,
+      hsl(218, 41%, 20%) 75%,
+      hsl(218, 41%, 19%) 80%,
+      transparent 100%);" >
+    <a href="#"><img src="2" alt="1">
+    <a class="navbar-brand text-light" href="#">MindCareer</a></a>
+    <i class="fa fa-car text-dark" aria-hidden="true"></i>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent" id="navbarNav" >
+      <ul class="navbar-nav  mx-auto">
+        <li class="nav-item ">
+          <a class="nav-link text-light" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown text-light" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+         Jobs
+          </a>
+          <div class="dropdown-menu">
+            <a class="dropdown-item" href="#!job_skill.html">Jobs by Skill</a>
+            <a class="dropdown-item" href="#!job_location.html">Jobs by Location</a>
+            <a class="dropdown-item" href="#!job_category.html">Jobs by Category</a>
+            <a class="dropdown-item" href="#!job_designation.html">Job by Designation</a>
+            <a class="dropdown-item" href="#!job_company.html">Jobs by Company</a>
+            <a class="dropdown-item" href="#!sector.html">Jobs by Sector</a>
+            <a class="dropdown-item" href="#!experience.html">Jobs by Experience</a>
+          </div>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown text-light" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+            Company
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#!c_category.html">Company by Category</a>
+            <a class="dropdown-item" href="#!c_location.html">Company by Location</a>
+            <a class="dropdown-item" href="#!c_Name.html">Company By Name</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown text-light" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+            Recruiters
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Recruiters By Category</a>
+            <a class="dropdown-item" href="#">Recruiter By Location</a>
+            <a class="dropdown-item" href="#">Recruiters By Company </a>
+            <a class="dropdown-item" href="#">Recruiters Grids</a>
+            <a class="dropdown-item" href="#">Recruiters Dashboard</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown text-light" href="#" id="navbarScrollingDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+            Candidates
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#!resume.html">Upload Resume</a>
+            <a class="dropdown-item" href="#!candidategrid.html">Candidates Grid</a>
+            <a class="dropdown-item" href="#!candidateDash.html"> Candidates Dashboard</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown text-light" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+          More  
+          </a>
+          <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a class="dropdown-item" href="#">Contact</a>
+            <a class="dropdown-item" href="#">Help</a>          
+            <a class="dropdown-item" href="#">Feedback</a>
+          </div>
+        </li>
+      </ul>
+      <button class="btn btn-transparent  " type="button" >
+        <a href="view/login.html">Login</a>
+        </button>
+      <button class="btn btn-transparent" type="button" ><a href="view/register.html">Register</a>
+      </button>
+    </div>
+  </nav>
+  </div>
+</section>
+
+<section>
+  
+  <div class="container-fluid" style="position:relative;">
+    <img src="/images/1.jpg" alt="Cinque Terre" width="1000" height="300" style="width: 100%;height:auto;">
+    <div class="center" style="position:absolute;top:40%;width:100%;text-align:center;font-size:18px;"><h2>We actually changes people lives.</h2></div>
+    <div class="center" style="position:absolute;top:45%;width:100%;text-align:center;font-size:18px;">
+      <div class="container" style="position: relative;">
+        <div class="row" style="margin-left:130px; margin-top: 30px;">
+      <form class="form-inline">
+          
+        <label class="sr-only" for="inlineFormInputName2">Skill</label>
+        <input type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2" placeholder="Keywords">
+        
+        
+        <label class="sr-only" for="inputGroupSelect03"></label>
+        <input type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2" placeholder="Company">
+         
+          
+      
+      
+        <label class="sr-only" for="inlineFormInputGroupUsername2">Username</label>
+        <div class="input-group mb-2 mr-sm-2">
+          <input type="text" class="form-control" id="inlineFormInputGroupUsername2" placeholder="Location">
+        </div>
+        
+      
+        <button type="submit" class="btn btn-primary mb-2">Search</button>
+      </form>
+         
+  </div>
+</div>
+  </section>
+
+<section>
+    <h1>REsume</h1>
+</section>
+
+
+<section class="section container-fluid " style=" margin-top: 10px; height: 200px; background-color: hsl(218, 41%, 15%);
+background-image: radial-gradient(650px circle at 0% 0%,
+    hsl(218, 41%, 35%) 15%,
+    hsl(218, 41%, 30%) 35%,
+    hsl(218, 41%, 20%) 75%,
+    hsl(218, 41%, 19%) 80%,
+    transparent 100%),
+  radial-gradient(1250px circle at 100% 100%,
+    hsl(218, 41%, 45%) 15%,
+    hsl(218, 41%, 30%) 35%,
+    hsl(218, 41%, 20%) 75%,
+    hsl(218, 41%, 19%) 80%,
+    transparent 100%);">
+  <div>
+    <div class="row row-cols-1 row-cols-md-4">
+      <div class="col mb-3 text-light">
+      <ul style="text-decoration:inline-block; list-style: none; margin-top: 20px; ">
+      <li>About Us</li>
+        <li>Term & Conditions</li>
+        <li>FAQs</li>
+        <li>Trust & Safety</li>
+       </ul>
+           </div>
+       <div class="col mb-3 text-light">
+        <ul style="text-decoration:inline-block; list-style: none; margin-top: 20px; ">
+            <li>Candidates</li>
+            <li>Register Now</li>
+            <li> Search Job</li>
+            <li>Login</li>
+          
+    
+      </div>
+      <div class="col mb-3 text-light">
+          <ul style="text-decoration:inline-block; list-style: none; margin-top: 20px;">
+            <li>Employers</li>
+            <li>Job Posting</li>
+            <li>Resume Database Access</li>
+            <li>Recruiter Login</li>
+            
+          </ul>
+      </div>
+          <div class="col mb-3 text-light">
+            <ul style="text-decoration:inline-block; list-style: none; margin-top: 20px;" >
+              <li>Social Media</li>
+              <li>Facebook</li>
+              <li>Instagram</li>
+              <li>Twitter</li>
+            
+            </ul> 
+          </div>
+      </div>
+    </div>
+  </div>
+  <div class="container text-light">
+    <p>@copyright</p>
+  </div>
+</section>
